@@ -84,7 +84,7 @@ Below is an example python script for extracting the profile data from the hdf5 
       val_metals_mw  = np.array(val[2,:,:])/Zsun #mass-weighted metallicity in solar units
       val_temp_mw    = np.array(val[3,:,:]) * temperature_conversion_factor #mass-weighted temperature in keV
       bins           = np.array(stacks['nbins']) #number of radial bins
-      r              = np.array(stacks['r']) / h / comoving_factor #radial bins in comoving kpc
+      r              = np.array(stacks['r']) / h / comoving_factor #radial bins in kpc
       nprofs         = np.array(stacks['nprofs']) #number of halos
       m200c             = np.array(stacks['Group_M_Crit200'])*1e10 / h #M200c in Msol
       r200c             = np.array(stacks['Group_R_Crit200']) / h / comoving_factor #R200c in kpc
